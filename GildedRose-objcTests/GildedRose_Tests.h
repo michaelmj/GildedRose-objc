@@ -8,6 +8,6 @@
 
 #import <SenTestingKit/SenTestingKit.h>
 
-@interface GildedRose_objcTests : SenTestCase
+@interface GildedRose_Tests : SenTestCase
 
 @end

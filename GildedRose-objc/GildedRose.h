@@ -8,6 +8,6 @@
 
 #import <Foundation/Foundation.h>
 
-@interface GildedRose_objc : NSObject
+@interface GildedRose : NSObject
 
 @end

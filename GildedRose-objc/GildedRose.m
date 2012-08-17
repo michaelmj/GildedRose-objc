@@ -6,8 +6,8 @@
 //  Copyright (c) 2012 Malinak, Michael. All rights reserved.
 //
 
-#import "GildedRose_objc.h"
+#import "GildedRose.h"
 
-@implementation GildedRose_objc
+@implementation GildedRose
 
 @end
