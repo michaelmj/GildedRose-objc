@@ -44,4 +44,16 @@ static NSMutableString * _multiIterationOutput(GildedRose *rose)
 //   NSMutableString *output = _multiIterationOutput(rose);
 //   [output writeToFile:@"startingTestOutput.txt" atomically:NO encoding:NSUTF8StringEncoding error:nil];
 //}
+
+- (void) test_OutputShouldMatchOriginalOutput
+{
+   GildedRose * rose = [GildedRose new];
+
+   NSMutableString *output = _multiIterationOutput(rose);
+   
+   NSString * originalOutput = [NSString stringWithContentsOfFile:@"startingTestOutput.txt" encoding:NSUTF8StringEncoding error:nil];
+   
+   STAssertEqualObjects(output, originalOutput, @"Inventory output should not change");
+}
+
 @end
