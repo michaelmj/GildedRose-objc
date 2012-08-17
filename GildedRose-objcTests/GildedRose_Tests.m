@@ -20,7 +20,7 @@
 - (void) test_RoseShouldImplementUpdateQuality
 {
    GildedRose * rose = [GildedRose new];
-   STAssertTrue([rose respondsToSelector:@selector(updateQuality)], @"");
+   STAssertTrue([rose respondsToSelector:@selector(updateQuality)], @"Must implement the base functionality");
 }
 
 @end
