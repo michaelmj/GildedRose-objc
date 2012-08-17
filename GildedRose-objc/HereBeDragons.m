@@ -37,6 +37,17 @@
    NSAssert(NO, @"I'm is to busy to do this work, you'd better finish it.");
 }
 
+-(NSString *) dump
+{
+   NSMutableString * dumpString = [NSMutableString string];
+   for( Item * item in _items )
+   {
+      [dumpString appendFormat:@"%@ \r\n", [item dump]];
+   }
+   
+   return dumpString;
+}
+
 @end
 
 
@@ -49,6 +60,12 @@
    item.quality = quality;
 
    return item;
+}
+
+-(NSString * ) dump
+{
+   // [0, 2] Aged Brie should sell in 2 and has quality 0.
+   return [NSString stringWithFormat:@"[%d, %d] %@ should sell in %d and has quality %d", _sellIn, _quality, _name, _sellIn, _quality];
 }
 
 @end

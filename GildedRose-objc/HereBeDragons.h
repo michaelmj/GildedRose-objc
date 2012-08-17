@@ -12,11 +12,15 @@
 
 @property (readonly) NSArray * items;
 -(void) updateQuality;
+-(NSString *) dump;
 @end
 
 @interface Item : NSObject
 +(Item *) itemWithName:(NSString *)name sellIn:(int)sellIn andQuality:(int)quality;
+-(NSString *) dump;
+
 @property NSString *name;
 @property int sellIn;
 @property int quality;
+
 @end
