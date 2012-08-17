@@ -94,12 +94,9 @@
 
 - (void)updateQuality
 {
-   for(int i = 0; i < self.items.count; i++)
-   {
-      Item * item = self.items[i];
-      
-      [self updateItem:item];
-   }
+   [self.items enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
+      [self updateItem:obj];
+   }];
 }
 
 @end
