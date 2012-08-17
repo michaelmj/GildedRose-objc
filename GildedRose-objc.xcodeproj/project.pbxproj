@@ -14,8 +14,8 @@
 		051AB9E115DDDF8E009C0498 /* libGildedRose-objc.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 051AB9C715DDDF8D009C0498 /* libGildedRose-objc.a */; };
 		051AB9E715DDDF8E009C0498 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 051AB9E515DDDF8E009C0498 /* InfoPlist.strings */; };
 		051AB9EA15DDDF8E009C0498 /* GildedRose_Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 051AB9E915DDDF8E009C0498 /* GildedRose_Tests.m */; };
-		51AB9F215DDDF8E009C049A /* Item.m in Sources */ = {isa = PBXBuildFile; fileRef = 51AB9F215DDDF8E009C0499 /* Item.m */; };
-		51AB9F215DDDF8E009C049C /* Item.h in Headers */ = {isa = PBXBuildFile; fileRef = 51AB9F215DDDF8E009C049B /* Item.h */; };
+		51AB9F215DDDF8E009C049E /* HereBeDragons.m in Sources */ = {isa = PBXBuildFile; fileRef = 51AB9F215DDDF8E009C049D /* HereBeDragons.m */; };
+		51AB9F215DDDF8E009C04A0 /* HereBeDragons.h in Headers */ = {isa = PBXBuildFile; fileRef = 51AB9F215DDDF8E009C049F /* HereBeDragons.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,8 +43,8 @@
 		051AB9E615DDDF8E009C0498 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		051AB9E815DDDF8E009C0498 /* GildedRose_Tests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GildedRose_Tests.h; sourceTree = "<group>"; };
 		051AB9E915DDDF8E009C0498 /* GildedRose_Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GildedRose_Tests.m; sourceTree = "<group>"; };
-		51AB9F215DDDF8E009C0499 /* Item.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Item.m; sourceTree = "<group>"; };
-		51AB9F215DDDF8E009C049B /* Item.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Item.h; sourceTree = "<group>"; };
+		51AB9F215DDDF8E009C049D /* HereBeDragons.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HereBeDragons.m; sourceTree = "<group>"; };
+		51AB9F215DDDF8E009C049F /* HereBeDragons.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HereBeDragons.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,8 +111,8 @@
 		051AB9D015DDDF8E009C0498 /* GildedRose-objc */ = {
 			isa = PBXGroup;
 			children = (
-				51AB9F215DDDF8E009C049B /* Item.h */,
-				51AB9F215DDDF8E009C0499 /* Item.m */,
+				51AB9F215DDDF8E009C049F /* HereBeDragons.h */,
+				51AB9F215DDDF8E009C049D /* HereBeDragons.m */,
 				051AB9D315DDDF8E009C0498 /* GildedRose.h */,
 				051AB9D415DDDF8E009C0498 /* GildedRose.m */,
 				051AB9D115DDDF8E009C0498 /* Supporting Files */,
@@ -154,7 +154,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				51AB9F215DDDF8E009C049C /* Item.h in Headers */,
+				51AB9F215DDDF8E009C04A0 /* HereBeDragons.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,7 +257,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				051AB9D515DDDF8E009C0498 /* GildedRose.m in Sources */,
-				51AB9F215DDDF8E009C049A /* Item.m in Sources */,
+				51AB9F215DDDF8E009C049E /* HereBeDragons.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
