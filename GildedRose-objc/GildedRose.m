@@ -9,79 +9,96 @@
 #import "GildedRose.h"
 
 @implementation GildedRose
-- (void)updateQuality
+
+- (void)updateQualityForItem:(Item *)item
 {
-   for(int i = 0; i < self.items.count; i++)
+   if([item name] != @"Aged Brie" && [item name] != @"Backstage passes to a TAFKAL80ETC concert")
    {
-      if([self.items[i] name] != @"Aged Brie" && [self.items[i] name] != @"Backstage passes to a TAFKAL80ETC concert")
+      if([item quality] > 0)
       {
-         if([self.items[i] quality] > 0)
+         if([item name] != @"Sulfuras, Hand of Ragnaros")
          {
-            if([self.items[i] name] != @"Sulfuras, Hand of Ragnaros")
-            {
-               [self.items[i] setQuality: [self.items[i] quality] - 1];
-            }
+            [item setQuality: [item quality] - 1];
          }
       }
-      else
+   }
+   else
+   {
+      if([item quality] < 50)
       {
-         if([self.items[i] quality] < 50)
+         [item setQuality: [item quality] + 1 ];
+         
+         if([item name] == @"Backstage passes to a TAFKAL80ETC concert")
          {
-            [self.items[i] setQuality: [self.items[i] quality] + 1 ];
-
-            if([self.items[i] name] == @"Backstage passes to a TAFKAL80ETC concert")
+            if([item sellIn] < 11)
             {
-               if([self.items[i] sellIn] < 11)
+               if([item quality] < 50)
                {
-                  if([self.items[i] quality] < 50)
-                  {
-                     [self.items[i] setQuality: [self.items[i] quality] + 1];
-                  }
+                  [item setQuality: [item quality] + 1];
                }
-
-               if([self.items[i] sellIn] < 6)
+            }
+            
+            if([item sellIn] < 6)
+            {
+               if([item quality] < 50)
                {
-                  if([self.items[i] quality] < 50)
-                  {
-                     [self.items[i] setQuality: [self.items[i] quality] + 1];
-                  }
+                  [item setQuality: [item quality] + 1];
                }
             }
          }
       }
+   }
+}
 
-      if([self.items[i] name] != @"Sulfuras, Hand of Ragnaros")
-      {
-         [self.items[i] setSellIn: [self.items[i] sellIn] - 1];
-      }
+- (void)updateSellInForItem:(Item *)item
+{
+   if([item name] != @"Sulfuras, Hand of Ragnaros")
+   {
+      [item setSellIn: [item sellIn] - 1];
+   }
+}
 
-      if([self.items[i] sellIn] < 0)
+- (void)updateItem:(Item *)item
+{
+   [self updateQualityForItem:item];
+   [self updateSellInForItem:item];
+   
+   if([item sellIn] < 0)
+   {
+      if([item name] != @"Aged Brie")
       {
-         if([self.items[i] name] != @"Aged Brie")
+         if([item name] != @"Backstage passes to a TAFKAL80ETC concert")
          {
-            if([self.items[i] name] != @"Backstage passes to a TAFKAL80ETC concert")
+            if([item quality] > 0)
             {
-               if([self.items[i] quality] > 0)
+               if([item name] != @"Sulfuras, Hand of Ragnaros")
                {
-                  if([self.items[i] name] != @"Sulfuras, Hand of Ragnaros")
-                  {
-                     [self.items[i] setQuality: [self.items[i] quality] - 1];
-                  }
+                  [item setQuality: [item quality] - 1];
                }
-            }
-            else
-            {
-               [self.items[i] setQuality: [self.items[i] quality] - [self.items[i] quality]];
             }
          }
          else
          {
-            if([self.items[i] quality] < 50)
-            {
-               [self.items[i] setQuality: [self.items[i] quality] + 1];
-            }
+            [item setQuality: [item quality] - [item quality]];
          }
       }
+      else
+      {
+         if([item quality] < 50)
+         {
+            [item setQuality: [item quality] + 1];
+         }
+      }
+   }
+}
+
+- (void)updateQuality
+{
+   for(int i = 0; i < self.items.count; i++)
+   {
+      Item * item = self.items[i];
+      
+      [self updateItem:item];
    }
 }
 
