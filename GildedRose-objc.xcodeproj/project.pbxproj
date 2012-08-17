@@ -1,0 +1,410 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		051AB9CB15DDDF8E009C0498 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 051AB9CA15DDDF8E009C0498 /* Cocoa.framework */; };
+		051AB9D515DDDF8E009C0498 /* GildedRose_objc.m in Sources */ = {isa = PBXBuildFile; fileRef = 051AB9D415DDDF8E009C0498 /* GildedRose_objc.m */; };
+		051AB9DD15DDDF8E009C0498 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 051AB9DC15DDDF8E009C0498 /* SenTestingKit.framework */; };
+		051AB9DE15DDDF8E009C0498 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 051AB9CA15DDDF8E009C0498 /* Cocoa.framework */; };
+		051AB9E115DDDF8E009C0498 /* libGildedRose-objc.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 051AB9C715DDDF8D009C0498 /* libGildedRose-objc.a */; };
+		051AB9E715DDDF8E009C0498 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 051AB9E515DDDF8E009C0498 /* InfoPlist.strings */; };
+		051AB9EA15DDDF8E009C0498 /* GildedRose_objcTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 051AB9E915DDDF8E009C0498 /* GildedRose_objcTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		051AB9DF15DDDF8E009C0498 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 051AB9BE15DDDF8D009C0498 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 051AB9C615DDDF8D009C0498;
+			remoteInfo = "GildedRose-objc";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		051AB9C715DDDF8D009C0498 /* libGildedRose-objc.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libGildedRose-objc.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		051AB9CA15DDDF8E009C0498 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		051AB9CD15DDDF8E009C0498 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		051AB9CE15DDDF8E009C0498 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		051AB9CF15DDDF8E009C0498 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		051AB9D215DDDF8E009C0498 /* GildedRose-objc-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GildedRose-objc-Prefix.pch"; sourceTree = "<group>"; };
+		051AB9D315DDDF8E009C0498 /* GildedRose_objc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GildedRose_objc.h; sourceTree = "<group>"; };
+		051AB9D415DDDF8E009C0498 /* GildedRose_objc.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GildedRose_objc.m; sourceTree = "<group>"; };
+		051AB9DB15DDDF8E009C0498 /* GildedRose-objcTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "GildedRose-objcTests.octest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		051AB9DC15DDDF8E009C0498 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		051AB9E415DDDF8E009C0498 /* GildedRose-objcTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GildedRose-objcTests-Info.plist"; sourceTree = "<group>"; };
+		051AB9E615DDDF8E009C0498 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		051AB9E815DDDF8E009C0498 /* GildedRose_objcTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GildedRose_objcTests.h; sourceTree = "<group>"; };
+		051AB9E915DDDF8E009C0498 /* GildedRose_objcTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GildedRose_objcTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		051AB9C415DDDF8D009C0498 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				051AB9CB15DDDF8E009C0498 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		051AB9D715DDDF8E009C0498 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				051AB9DD15DDDF8E009C0498 /* SenTestingKit.framework in Frameworks */,
+				051AB9DE15DDDF8E009C0498 /* Cocoa.framework in Frameworks */,
+				051AB9E115DDDF8E009C0498 /* libGildedRose-objc.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		051AB9BC15DDDF8D009C0498 = {
+			isa = PBXGroup;
+			children = (
+				051AB9D015DDDF8E009C0498 /* GildedRose-objc */,
+				051AB9E215DDDF8E009C0498 /* GildedRose-objcTests */,
+				051AB9C915DDDF8D009C0498 /* Frameworks */,
+				051AB9C815DDDF8D009C0498 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		051AB9C815DDDF8D009C0498 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				051AB9C715DDDF8D009C0498 /* libGildedRose-objc.a */,
+				051AB9DB15DDDF8E009C0498 /* GildedRose-objcTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		051AB9C915DDDF8D009C0498 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				051AB9CA15DDDF8E009C0498 /* Cocoa.framework */,
+				051AB9DC15DDDF8E009C0498 /* SenTestingKit.framework */,
+				051AB9CC15DDDF8E009C0498 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		051AB9CC15DDDF8E009C0498 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				051AB9CD15DDDF8E009C0498 /* AppKit.framework */,
+				051AB9CE15DDDF8E009C0498 /* CoreData.framework */,
+				051AB9CF15DDDF8E009C0498 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		051AB9D015DDDF8E009C0498 /* GildedRose-objc */ = {
+			isa = PBXGroup;
+			children = (
+				051AB9D315DDDF8E009C0498 /* GildedRose_objc.h */,
+				051AB9D415DDDF8E009C0498 /* GildedRose_objc.m */,
+				051AB9D115DDDF8E009C0498 /* Supporting Files */,
+			);
+			path = "GildedRose-objc";
+			sourceTree = "<group>";
+		};
+		051AB9D115DDDF8E009C0498 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				051AB9D215DDDF8E009C0498 /* GildedRose-objc-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		051AB9E215DDDF8E009C0498 /* GildedRose-objcTests */ = {
+			isa = PBXGroup;
+			children = (
+				051AB9E815DDDF8E009C0498 /* GildedRose_objcTests.h */,
+				051AB9E915DDDF8E009C0498 /* GildedRose_objcTests.m */,
+				051AB9E315DDDF8E009C0498 /* Supporting Files */,
+			);
+			path = "GildedRose-objcTests";
+			sourceTree = "<group>";
+		};
+		051AB9E315DDDF8E009C0498 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				051AB9E415DDDF8E009C0498 /* GildedRose-objcTests-Info.plist */,
+				051AB9E515DDDF8E009C0498 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		051AB9C515DDDF8D009C0498 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		051AB9C615DDDF8D009C0498 /* GildedRose-objc */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 051AB9ED15DDDF8E009C0498 /* Build configuration list for PBXNativeTarget "GildedRose-objc" */;
+			buildPhases = (
+				051AB9C315DDDF8D009C0498 /* Sources */,
+				051AB9C415DDDF8D009C0498 /* Frameworks */,
+				051AB9C515DDDF8D009C0498 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "GildedRose-objc";
+			productName = "GildedRose-objc";
+			productReference = 051AB9C715DDDF8D009C0498 /* libGildedRose-objc.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		051AB9DA15DDDF8E009C0498 /* GildedRose-objcTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 051AB9F015DDDF8E009C0498 /* Build configuration list for PBXNativeTarget "GildedRose-objcTests" */;
+			buildPhases = (
+				051AB9D615DDDF8E009C0498 /* Sources */,
+				051AB9D715DDDF8E009C0498 /* Frameworks */,
+				051AB9D815DDDF8E009C0498 /* Resources */,
+				051AB9D915DDDF8E009C0498 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				051AB9E015DDDF8E009C0498 /* PBXTargetDependency */,
+			);
+			name = "GildedRose-objcTests";
+			productName = "GildedRose-objcTests";
+			productReference = 051AB9DB15DDDF8E009C0498 /* GildedRose-objcTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		051AB9BE15DDDF8D009C0498 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0440;
+				ORGANIZATIONNAME = "Malinak, Michael";
+			};
+			buildConfigurationList = 051AB9C115DDDF8D009C0498 /* Build configuration list for PBXProject "GildedRose-objc" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 051AB9BC15DDDF8D009C0498;
+			productRefGroup = 051AB9C815DDDF8D009C0498 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				051AB9C615DDDF8D009C0498 /* GildedRose-objc */,
+				051AB9DA15DDDF8E009C0498 /* GildedRose-objcTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		051AB9D815DDDF8E009C0498 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				051AB9E715DDDF8E009C0498 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		051AB9D915DDDF8E009C0498 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		051AB9C315DDDF8D009C0498 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				051AB9D515DDDF8E009C0498 /* GildedRose_objc.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		051AB9D615DDDF8E009C0498 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				051AB9EA15DDDF8E009C0498 /* GildedRose_objcTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		051AB9E015DDDF8E009C0498 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 051AB9C615DDDF8D009C0498 /* GildedRose-objc */;
+			targetProxy = 051AB9DF15DDDF8E009C0498 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		051AB9E515DDDF8E009C0498 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				051AB9E615DDDF8E009C0498 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		051AB9EB15DDDF8E009C0498 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		051AB9EC15DDDF8E009C0498 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		051AB9EE15DDDF8E009C0498 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GildedRose-objc/GildedRose-objc-Prefix.pch";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		051AB9EF15DDDF8E009C0498 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GildedRose-objc/GildedRose-objc-Prefix.pch";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		051AB9F115DDDF8E009C0498 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = "\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GildedRose-objc/GildedRose-objc-Prefix.pch";
+				INFOPLIST_FILE = "GildedRose-objcTests/GildedRose-objcTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		051AB9F215DDDF8E009C0498 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = "\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GildedRose-objc/GildedRose-objc-Prefix.pch";
+				INFOPLIST_FILE = "GildedRose-objcTests/GildedRose-objcTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		051AB9C115DDDF8D009C0498 /* Build configuration list for PBXProject "GildedRose-objc" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				051AB9EB15DDDF8E009C0498 /* Debug */,
+				051AB9EC15DDDF8E009C0498 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		051AB9ED15DDDF8E009C0498 /* Build configuration list for PBXNativeTarget "GildedRose-objc" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				051AB9EE15DDDF8E009C0498 /* Debug */,
+				051AB9EF15DDDF8E009C0498 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		051AB9F015DDDF8E009C0498 /* Build configuration list for PBXNativeTarget "GildedRose-objcTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				051AB9F115DDDF8E009C0498 /* Debug */,
+				051AB9F215DDDF8E009C0498 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 051AB9BE15DDDF8D009C0498 /* Project object */;
+}
