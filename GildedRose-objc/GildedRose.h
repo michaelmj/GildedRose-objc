@@ -7,10 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "Item.h"
+#import "HereBeDragons.h"
 
-@interface GildedRose : NSObject
-@property (readonly) NSArray * items;
+@interface GildedRose : GildedRoseBase
 
--updateQuality;
 @end
