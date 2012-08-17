@@ -17,4 +17,10 @@
    STAssertNotNil(rose, @"Rose creation was not successful");
 }
 
+- (void) test_RoseShouldImplementUpdateQuality
+{
+   GildedRose * rose = [GildedRose new];
+   STAssertTrue([rose respondsToSelector:@selector(updateQuality)], @"");
+}
+
 @end
