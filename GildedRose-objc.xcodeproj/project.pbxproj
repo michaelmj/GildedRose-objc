@@ -14,6 +14,11 @@
 		051AB9E115DDDF8E009C0498 /* libGildedRose-objc.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 051AB9C715DDDF8D009C0498 /* libGildedRose-objc.a */; };
 		051AB9E715DDDF8E009C0498 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 051AB9E515DDDF8E009C0498 /* InfoPlist.strings */; };
 		051AB9EA15DDDF8E009C0498 /* GildedRose_Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 051AB9E915DDDF8E009C0498 /* GildedRose_Tests.m */; };
+		05DBCB0115E1F47A00E94EC6 /* Item+Testable.h in Headers */ = {isa = PBXBuildFile; fileRef = 05DBCAFF15E1F47A00E94EC6 /* Item+Testable.h */; };
+		05DBCB0215E1F47A00E94EC6 /* Item+Testable.m in Sources */ = {isa = PBXBuildFile; fileRef = 05DBCB0015E1F47A00E94EC6 /* Item+Testable.m */; };
+		05DBCB0415E1F51D00E94EC6 /* Item+Testable.m in Sources */ = {isa = PBXBuildFile; fileRef = 05DBCB0015E1F47A00E94EC6 /* Item+Testable.m */; };
+		05DBCB0515E1F52400E94EC6 /* GildedRose.m in Sources */ = {isa = PBXBuildFile; fileRef = 051AB9D415DDDF8E009C0498 /* GildedRose.m */; };
+		05DBCB0615E1F52800E94EC6 /* HereBeDragons.m in Sources */ = {isa = PBXBuildFile; fileRef = 51AB9F215DDDF8E009C049D /* HereBeDragons.m */; };
 		51AB9F215DDDF8E009C049E /* HereBeDragons.m in Sources */ = {isa = PBXBuildFile; fileRef = 51AB9F215DDDF8E009C049D /* HereBeDragons.m */; };
 		51AB9F215DDDF8E009C04A0 /* HereBeDragons.h in Headers */ = {isa = PBXBuildFile; fileRef = 51AB9F215DDDF8E009C049F /* HereBeDragons.h */; };
 /* End PBXBuildFile section */
@@ -43,6 +48,8 @@
 		051AB9E615DDDF8E009C0498 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		051AB9E815DDDF8E009C0498 /* GildedRose_Tests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GildedRose_Tests.h; sourceTree = "<group>"; };
 		051AB9E915DDDF8E009C0498 /* GildedRose_Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GildedRose_Tests.m; sourceTree = "<group>"; };
+		05DBCAFF15E1F47A00E94EC6 /* Item+Testable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Item+Testable.h"; sourceTree = "<group>"; };
+		05DBCB0015E1F47A00E94EC6 /* Item+Testable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Item+Testable.m"; sourceTree = "<group>"; };
 		51AB9F215DDDF8E009C049D /* HereBeDragons.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HereBeDragons.m; sourceTree = "<group>"; };
 		51AB9F215DDDF8E009C049F /* HereBeDragons.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HereBeDragons.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -116,6 +123,8 @@
 				051AB9D315DDDF8E009C0498 /* GildedRose.h */,
 				051AB9D415DDDF8E009C0498 /* GildedRose.m */,
 				051AB9D115DDDF8E009C0498 /* Supporting Files */,
+				05DBCAFF15E1F47A00E94EC6 /* Item+Testable.h */,
+				05DBCB0015E1F47A00E94EC6 /* Item+Testable.m */,
 			);
 			path = "GildedRose-objc";
 			sourceTree = "<group>";
@@ -155,6 +164,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				51AB9F215DDDF8E009C04A0 /* HereBeDragons.h in Headers */,
+				05DBCB0115E1F47A00E94EC6 /* Item+Testable.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,6 +268,7 @@
 			files = (
 				051AB9D515DDDF8E009C0498 /* GildedRose.m in Sources */,
 				51AB9F215DDDF8E009C049E /* HereBeDragons.m in Sources */,
+				05DBCB0215E1F47A00E94EC6 /* Item+Testable.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,6 +277,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				051AB9EA15DDDF8E009C0498 /* GildedRose_Tests.m in Sources */,
+				05DBCB0415E1F51D00E94EC6 /* Item+Testable.m in Sources */,
+				05DBCB0515E1F52400E94EC6 /* GildedRose.m in Sources */,
+				05DBCB0615E1F52800E94EC6 /* HereBeDragons.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

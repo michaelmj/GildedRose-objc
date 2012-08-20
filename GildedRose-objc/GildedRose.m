@@ -7,6 +7,7 @@
 //
 
 #import "GildedRose.h"
+#import "Item+Testable.h"
 
 @implementation GildedRose
 
@@ -16,7 +17,7 @@
    {
       if([item quality] > 0)
       {
-         if([item name] != @"Sulfuras, Hand of Ragnaros")
+         if( ![item isLegendary] )
          {
             [item setQuality: [item quality] - 1];
          }
@@ -52,7 +53,7 @@
 
 - (void)updateSellInForItem:(Item *)item
 {
-   if([item name] != @"Sulfuras, Hand of Ragnaros")
+   if( ![item isLegendary] )
    {
       [item setSellIn: [item sellIn] - 1];
    }
@@ -71,7 +72,7 @@
          {
             if([item quality] > 0)
             {
-               if([item name] != @"Sulfuras, Hand of Ragnaros")
+               if( ![item isLegendary] )
                {
                   [item setQuality: [item quality] - 1];
                }
