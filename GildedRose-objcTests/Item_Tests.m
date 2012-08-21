@@ -35,8 +35,8 @@
         Item * item = [Item itemWithName:name sellIn:startSell andQuality:startQuality];
         [item ageItem];
         
-        STAssertEquals(endSell, item.sellIn, @"sell in should have decreased by one");
-        STAssertEquals(endQuality, item.quality, @"quality should have decreased");
+        STAssertEquals( item.sellIn, endSell, @"sell date does not match");
+        STAssertEquals( item.quality, endQuality, @"ending quality does not match");
     }
 }
 
@@ -68,6 +68,18 @@
    ];
    
    [self ageItemWithName:@"Aged Brie" andData:data];
+}
+
+-(void) test_ConcertTicketsShouldGetBetterAndThenCrash
+{
+   NSArray * data = @[
+   @{ @"sellIn": @(15), @"quality": @(20), @"endSell": @(14), @"endQuality": @(21) },
+   @{ @"sellIn": @(10), @"quality": @(20), @"endSell": @(9), @"endQuality": @(22) },
+   @{ @"sellIn": @(2), @"quality": @(20), @"endSell": @(1), @"endQuality": @(23) },
+   @{ @"sellIn": @(0), @"quality": @(20), @"endSell": @(-1), @"endQuality": @(0) },
+   ];
+   
+   [self ageItemWithName:@"Backstage passes to a TAFKAL80ETC concert" andData:data];
 }
 
 @end
