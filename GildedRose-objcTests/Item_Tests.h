@@ -1,14 +1,13 @@
 //
-//  Item+Testable.h
+//  Item_Tests.h
 //  GildedRose-objc
 //
 //  Created by Malinak, Michael on 8/20/12.
 //  Copyright (c) 2012 Malinak, Michael. All rights reserved.
 //
 
-#import "HereBeDragons.h"
+#import <SenTestingKit/SenTestingKit.h>
 
-@interface Item (Testable)
--(BOOL) isLegendary;
--(void) ageItem;
+@interface Item_Tests : SenTestCase
+
 @end
