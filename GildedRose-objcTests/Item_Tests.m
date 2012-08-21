@@ -35,8 +35,8 @@
         Item * item = [Item itemWithName:name sellIn:startSell andQuality:startQuality];
         [item ageItem];
         
-        STAssertEquals( item.sellIn, endSell, @"sell date does not match");
-        STAssertEquals( item.quality, endQuality, @"ending quality does not match");
+        STAssertEquals( item.sellIn, endSell, @"%@", name);
+        STAssertEquals( item.quality, endQuality, @"%@", name );
     }
 }
 
@@ -80,6 +80,16 @@
    ];
    
    [self ageItemWithName:@"Backstage passes to a TAFKAL80ETC concert" andData:data];
+}
+
+-(void) test_ConjuredStuffShouldDegradeTwiceAsFast
+{
+   NSArray * data = @[
+   @{ @"sellIn": @(2), @"quality": @(10), @"endSell": @(1), @"endQuality": @(8) },
+   @{ @"sellIn": @(-1), @"quality": @(10), @"endSell": @(-2), @"endQuality": @(6) },
+   ];
+   
+   [self ageItemWithName:@"Conjured Mana Cake" andData:data];
 }
 
 @end

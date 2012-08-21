@@ -29,30 +29,23 @@
    
    if([self sellIn] < 0)
    {
-      if([self name] != @"Aged Brie")
-      {
-         if([self name] != @"Backstage passes to a TAFKAL80ETC concert")
-         {
-            if([self quality] > 0)
-            {
-               if( ![self isLegendary] )
-               {
-                  [self setQuality: [self quality] - 1];
-               }
-            }
-         }
-         else
-         {
-            [self setQuality: 0];
-         }
-      }
-      else
-      {
-         if([self quality] < 50)
-         {
-            [self setQuality: [self quality] + 1];
-         }
-      }
+      [self updateQuality];
+   }
+}
+
+-(void) increaseQuality
+{
+   if([self quality] < 50)
+   {
+      [self setQuality: [self quality] + 1];
+   }
+}
+
+-(void) decreaseQuality
+{
+   if([self quality] > 0 && ![self isLegendary])
+   {
+      [self setQuality: [self quality] - 1];
    }
 }
 
@@ -60,36 +53,33 @@
 {
    if([self name] != @"Aged Brie" && [self name] != @"Backstage passes to a TAFKAL80ETC concert")
    {
-      if([self quality] > 0)
+      [self decreaseQuality];
+      
+      if ( [[self name] isEqualToString:@"Conjured Mana Cake" ] )
       {
-         if( ![self isLegendary] )
-         {
-            [self setQuality: [self quality] - 1];
-         }
+         [self decreaseQuality];
       }
    }
    else
    {
-      if([self quality] < 50)
+      [self increaseQuality];
+      
+      if( [self name] == @"Backstage passes to a TAFKAL80ETC concert")
       {
-         [self setQuality: [self quality] + 1 ];
-         
-         if([self name] == @"Backstage passes to a TAFKAL80ETC concert")
+         if ( [self sellIn] < 0 )
+         {
+            [self setQuality: 0];
+         }
+         else
          {
             if([self sellIn] < 11)
             {
-               if([self quality] < 50)
-               {
-                  [self setQuality: [self quality] + 1];
-               }
+               [self increaseQuality];
             }
             
             if([self sellIn] < 6)
             {
-               if([self quality] < 50)
-               {
-                  [self setQuality: [self quality] + 1];
-               }
+               [self increaseQuality];
             }
          }
       }

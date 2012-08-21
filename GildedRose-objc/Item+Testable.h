@@ -11,4 +11,6 @@
 @interface Item (Testable)
 -(BOOL) isLegendary;
 -(void) ageItem;
+-(void) increaseQuality;
+-(void) decreaseQuality;
 @end
