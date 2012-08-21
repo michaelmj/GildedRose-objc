@@ -23,25 +23,51 @@
    STAssertFalse(item.isLegendary, @"Normal item shouldn't be legendary");
 }
 
--(void) test_NormalItemShoudlDegradeNormally
+- (void)ageItemWithName:(NSString*)name andData:(NSArray *)data
+{
+    for (NSDictionary * dataEntry in data) {
+        int startSell = [dataEntry[@"sellIn"] intValue];
+        int startQuality = [dataEntry[@"quality"] intValue];
+        
+        int endSell = [dataEntry[@"endSell"] intValue];
+        int endQuality = [dataEntry[@"endQuality"] intValue];
+        
+        Item * item = [Item itemWithName:name sellIn:startSell andQuality:startQuality];
+        [item ageItem];
+        
+        STAssertEquals(endSell, item.sellIn, @"sell in should have decreased by one");
+        STAssertEquals(endQuality, item.quality, @"quality should have decreased");
+    }
+}
+
+-(void) test_NormalItemShouldDegradeNormally
 {
    NSArray * data = @[
    @{ @"sellIn": @(2), @"quality": @(5), @"endSell": @(1), @"endQuality": @(4) },
    @{ @"sellIn": @(0), @"quality": @(2), @"endSell": @(-1), @"endQuality": @(0) },
    ];
    
-   for (NSDictionary * dataEntry in data) {
-      int startSell = [dataEntry[@"sellIn"] intValue];
-      int startQuality = [dataEntry[@"quality"] intValue];
-      
-      int endSell = [dataEntry[@"endSell"] intValue];
-      int endQuality = [dataEntry[@"endQuality"] intValue];
-      
-      Item * item = [Item itemWithName:@"Something" sellIn:startSell andQuality:startQuality];
-      [item ageItem];
-      
-      STAssertEquals(endSell, item.sellIn, @"sell in should have decreased by one");
-      STAssertEquals(endQuality, item.quality, @"quality should have decreased");
-   }
+   [self ageItemWithName:@"Something" andData:data];
 }
+
+-(void) test_LegendaryItemShouldNotDegrade
+{
+   NSArray * data = @[
+   @{ @"sellIn": @(2), @"quality": @(50), @"endSell": @(2), @"endQuality": @(50) },
+   @{ @"sellIn": @(0), @"quality": @(20), @"endSell": @(0), @"endQuality": @(20) },
+   ];
+   
+   [self ageItemWithName:@"Sulfuras, Hand of Ragnaros" andData:data];
+}
+
+-(void) test_AgedBrieShouldGetBetter
+{
+   NSArray * data = @[
+   @{ @"sellIn": @(2), @"quality": @(20), @"endSell": @(1), @"endQuality": @(21) },
+   @{ @"sellIn": @(0), @"quality": @(50), @"endSell": @(-1), @"endQuality": @(50) },
+   ];
+   
+   [self ageItemWithName:@"Aged Brie" andData:data];
+}
+
 @end
